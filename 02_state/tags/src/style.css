@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: rgb(77, 91, 89);
+  background: linear-gradient(
+    160deg,
+    rgba(77, 91, 89, 1) 0%,
+    rgba(129, 143, 125, 1) 32%,
+    rgba(135, 149, 129, 1) 36%,
+    rgba(157, 171, 145, 1) 50%,
+    rgba(141, 155, 134, 1) 66%,
+    rgba(77, 91, 89, 1) 100%
+  );
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cloud-wrapper {
+  border-top: 4px solid #009ddd;
+  background-color: #eff1f7;
+  padding: 60px;
+  height: min-content;
+  width: 800px;
+  max-width: 100%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.cloud-wrapper header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tag {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding-inline: 16px;
+  background-color: white;
+  color: #555555;
+  border-left: #e98302 solid 4px;
+}
+
+.input-container {
+  display: flex;
+  height: 2.5em;
+}
+
+input {
+  font-size: 1em;
+  border: 1px solid #98c1d1;
+  border-right: none;
+  padding-inline: 16px;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: #009ddd;
+  color: white;
+  padding: 0 16px;
+  font-size: inherit;
+  border-radius: 4px;
+  transition: background-color 200ms ease-in-out;
+  cursor: pointer;
+}
+
+button:not(:disabled):hover {
+  background-color: #0d7daa;
+}
+
+.input-container button {
+  border-radius: 0 4px 4px 0;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
